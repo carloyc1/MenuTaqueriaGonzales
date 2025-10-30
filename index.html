@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Taquería González - Menú</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Varela+Round&family=Bebas+Neue&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --azul-principal: #3A8FB7;  /* Azul natural del logo */
+      --azul-claro: #8FC7E0;
+      --marron-oscuro: #3C1C0E;
+      --beige: #F7E8D0;
+      --rojo-logo: #C7392B;
+    }
+
+   body {
+      font-family: 'Varela Round', sans-serif;
+      background: url('./images/fondo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #2B1D0E;
+    }
+
+    .title-font {
+      font-family: 'Bebas Neue', cursive;
+      letter-spacing: 0.05em;
+    }
+
+    .header-bg {
+      background: linear-gradient(to right, var(--azul-principal), var(--azul-claro));
+      color: white;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .taco-card {
+      background: linear-gradient(to bottom right, white, #fefbf5);
+      border-radius: 1rem;
+      padding: 1.2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      border-bottom: 6px solid var(--azul-principal);
+      transition: all 0.25s;
+    }
+
+    .taco-card:hover {
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      background: linear-gradient(to bottom right, #ffffff, #f0f9ff);
+    }
+
+    .text-logo {
+      color: var(--rojo-logo);
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      font-weight: bold;
+      padding: 0.8rem 1.5rem;
+      border-radius: 2rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      transition: all 0.25s;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1EBE5D;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con logo -->
+  <header class="header-bg py-6 shadow-md text-center border-b-4 border-[#C7392B]">
+ <h1 class="text-4xl md:text-5xl font-extrabold title-font drop-shadow-md ">Taquería González</h1>
+    <p class="text-lg italic font-semibold opacity-90">La tradición hecha taco</p>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="max-w-3xl mx-auto p-6 mt-6 mb-20 bg-white/80 rounded-3xl shadow-lg border-2 border-[#8FC7E0]/70 backdrop-blur-md">
+
+    <h2 class="text-5xl font-extrabold text-center mb-8 title-font text-[#1A3852]"><br>
+        <img src="./images/logo.jpeg" alt="Logo Taquería González" class="mx-auto mb-2 w-40 h-auto  shadow-md border-4">
+      <span class="text-logo">Gran</span> Reapertura!
+    </h2>
+
+    <!-- Sección del menú -->
+    <section>
+      <h3 class="text-3xl font-bold mb-6 title-font border-l-4 border-[#C7392B] pl-3 text-[#1A3852]">
+        Tacos Clásicos y de Guisado
+      </h3>
+
+      <div id="taco-menu" class="grid grid-cols-2 md:grid-cols-3 gap-6"></div>
+    </section>
+
+    <!-- Sección de Aguas -->
+    <section class="mt-12 text-center bg-[#E9F7FB]/80 rounded-2xl p-6 border-2 border-dashed border-[#3A8FB7] shadow-inner">
+      <h3 class="text-3xl font-extrabold text-[#1A3852] mb-2 title-font">
+        ¡Pregunta por nuestras <span class="text-logo">aguas del día</span>!
+      </h3>
+      <p class="text-lg font-semibold text-[#3C1C0E]">Horchata, Jamaica y Sabor de Temporada</p>
+      <p class="text-sm mt-2 text-gray-600">Consulta la disponibilidad en el WhatsApp </p>
+    </section>
+  </main>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="https://wa.me/XXXXXXXXXX?text=Hola,%20me%20gustaría%20hacer%20un%20pedido%20y%20saber%20el%20agua%20del%20día." 
+     target="_blank" 
+     class="fixed bottom-5 right-5 btn-whatsapp flex items-center space-x-2 z-50">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+      <path d="M12.04 2C6.54 2 2.04 6.5 2.04 12c0 1.76.46 3.44 1.26 4.9L2.01 22l5.36-1.44c1.45.8 3.1 1.22 4.67 1.22 5.5 0 10-4.5 10-10S17.54 2 12.04 2z"/>
+    </svg>
+    <span>WhatsApp</span>
+  </a>
+
+  <script>
+    const tacoData = [
+      { nombre: "Longaniza", precio: 20.00 },
+      { nombre: "Cabeza de Puerco", precio: 22.00 },
+      { nombre: "Campechanos", precio: 25.00 },
+      { nombre: "Suadero", precio: 20.00 },
+      { nombre: "Carne Enchilada", precio: 22.00 },
+      { nombre: "Molleja Enchilpinada", precio: 22.00 },
+      { nombre: "Bistec", precio: 22.00 },
+      { nombre: "Mixiote de Res", precio: 25.00 },
+      { nombre: "Sesos", precio: 25.00 },
+    ];
+
+    const tacoMenuContainer = document.getElementById('taco-menu');
+
+    function renderTacoMenu() {
+      tacoData.forEach(item => {
+        const card = document.createElement('div');
+        card.className = 'taco-card text-center';
+        
+        const name = document.createElement('p');
+        name.textContent = item.nombre;
+        name.className = 'text-xl font-bold mb-1 text-[#1A3852]';
+        
+        const price = document.createElement('span');
+        price.textContent = `$${item.precio.toFixed(2)}`;
+        price.className = 'text-2xl font-extrabold text-logo';
+        
+        card.appendChild(name);
+        card.appendChild(price);
+        tacoMenuContainer.appendChild(card);
+      });
+    }
+
+    window.onload = renderTacoMenu;
+  </script>
+</body>
+</html>
