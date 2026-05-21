@@ -12,11 +12,11 @@ const tacosData = [
     { id: 'taco_longaniza', nombre: 'Longaniza', precio: 18, desc: 'Longaniza fresca dorada a la plancha.' },
     { id: 'taco_suadero', nombre: 'Suadero', precio: 18, desc: 'Suadero jugoso, suave y tradicional.' },
     { id: 'taco_bistec', nombre: 'Bistec', precio: 18, desc: 'Finos filetes de bistec de res cocinados al momento.' },
-    { id: 'taco_mixiote_p', nombre: 'Mixiote de Pollo c/Nopales', precio: 18, desc: 'Pollo preparado en forma de mixiote, con nopales.' },
+    { id: 'taco_mixiote_p', nombre: 'Mixiote de Pollo c/Nopales', precio: 18, desc: 'Pollo preparado en chile de mixiote, con nopales.' },
     { id: 'taco_sesos', nombre: 'Sesos', precio: 18, desc: 'Sesos de cerdo preparadas .' },
     { id: 'taco_cabeza', nombre: 'Cabeza de Puerco', precio: 18, desc: 'Carne de cabeza de cerdo al vapor.' },
     { id: 'taco_enchilada', nombre: 'Carne Enchilada', precio: 18, desc: 'Carne de cerdo enchila estilo jalisco.' },
-    { id: 'taco_mixiote_r', nombre: 'Mixiote de Res', precio: 18, desc: 'Carne de res preparada en forma de mixiote tradicional.' },
+    { id: 'taco_mixiote_r', nombre: 'Mixiote de Res', precio: 18, desc: 'Carne de res preparada en chile de mixiote tradicional.' },
     { id: 'taco_campechano', nombre: 'Campechanos', precio: 18, desc: 'Fusión de longaniza y bisteck tierno.' },
     { id: 'taco_molleja', nombre: 'Molleja Enchiltipinada', precio: 18, desc: 'Mollejas sazonadas en picante tipo chiltepín.' }
 ];
