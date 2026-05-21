@@ -10,7 +10,7 @@ const TELEFONO_WHATSAPP = '7971185924';
 // Datos de productos reales del volante impreso
 const tacosData = [
     { id: 'taco_longaniza', nombre: 'Longaniza', precio: 18, desc: 'Lnganiza fresca dorada a la plancha.' },
-    { id: 'taco_suadero', nombre: 'Suadero', precio: 18, desc: "Suadero jugoso, suave y tradicional.' },
+    { id: 'taco_suadero', nombre: 'Suadero', precio: 18, desc: 'Suadero jugoso, suave y tradicional.' },
     { id: 'taco_bistec', nombre: 'Bistec', precio: 18, desc: 'Finos filetes de bistec de res cocinados al momento.' },
     { id: 'taco_mixiote_p', nombre: 'Mixiote de Pollo c/Nopales', precio: 18, desc: 'Pollo preparado en forma de mixiote, con nopales.' },
     { id: 'taco_sesos', nombre: 'Sesos', precio: 18, desc: 'Sesos de res preparadas .' },
